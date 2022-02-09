@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --color1: #dcd9b3;
+    --color2: #ff714b;
+    --color3: #c60052;
+    --color4: #eaff87;
+    --color5: #0aabba;
+    --fonte: #fff;
+    --cards: white;
+    --ghit: black;
+}
+
+.header {
+    background-color: var(--color2);
+    padding: 0.5rem 2rem;
+    position:sticky;
+    top: 0;
+}
+
+.header .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header-nav .header-nav-logo img {
+    height: 4rem;
+    width: 8rem;
+    border-radius: 1rem;
+}
+
+.header .header-nav .header-nav-links ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.75rem;
+}
+
+.header .header-nav .header-nav-links-dropdown {
+    display: none;
+}
+
+.header .header-nav .header-nav-links ul li {
+    list-style: none;
+}
+
+.header .header-nav .header-nav-links ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--fonte);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Section 1*/
+
+.main .main-section:nth-child(1) {
+    background-color: var(--color1);
+    margin: 0 0;
+    max-width: 140rem;
+    width: 100%;
+}
+
+.main .main-section .main-section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    border-radius: 0.5rem;
+    max-width: 120rem;
+    flex-direction: row;
+    margin: 2rem 10rem;
+}
+
+.main .main-section .main-section-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 4rem;
+}
+
+.main .main-section .main-section-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.main .main-section .main-section-text p {
+    font-size: 1.5rem;
+}
+
+.main .main-section .main-section-img {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+
+/*Section 2*/
+
+.main .main-section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    max-width: 120rem;
+    margin-top: 25.2rem;
+    margin-bottom: 25.2rem;
+}
+
+.main .main-section:nth-child(2) h2 {
+    font-size: 2.9rem;
+    margin-bottom: 1.3rem;
+    text-align: center;
+}
+
+.main .main-section .main-section-sports {
+    display: flex;
+    max-width: 120rem;
+    gap: 3rem;
+    flex-direction: row;
+}
+
+.main .main-section .main-section-sports .main-section-sports-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    border-radius: 0.5rem;
+    width: 30rem;
+    background-color: var(--color1);
+}
+
+.main .main-section .main-section-sports .main-section-sports-card img {
+    width: 100%;
+    height: 20rem;
+    border-radius: 0.5rem;
+}
+
+.main .main-section .main-section-sports .main-section-sports-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .main-section .main-section-sports .main-section-sports-card .main-section-sports-card-text {
+    padding: 1.5rem 1rem;
+}
+
+.main .main-section .main-section-sports .main-section-sports-card .main-section-sports-card-text h3 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.main .main-section .main-section-sports .main-section-sports-card .main-section-sports-card-text p {
+    font-size: 1.2rem;
+}
+
+
+/*Section 3*/
+
+.main .main-section:nth-child(3) {
+    background-color: var(--color5);
+    display: flex;
+    flex-direction: column;
+    max-width:140rem;
+    width: 100%;
+}
+
+.main .main-section .main-section-benefits {
+    width: 100%;
+}
+
+.main .main-section .main-section-benefits h2 {
+    font-size: 2.9rem;
+    margin-bottom: 1.3rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--fonte);
+}
+
+.main .main-section .main-section-benefits .main-section-benefits-color {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.main .main-section .main-section-benefits .main-section-benefits-color .main-section-benefits-color-block {
+    display: flex;
+    max-width: 80rem;
+    gap: 2.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    border-radius: 0.5rem;
+    background-color: var(--cards);
+}
+
+.main .main-section .main-section-benefits .main-section-benefits-color:nth-child(odd) .main-section-benefits-color-block:nth-child(odd) {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 80rem;
+    gap: 2.5rem;
+}
+
+.main .main-section .main-section-benefits .main-section-benefits-color .main-section-benefits-color-block img {
+    display: flex;
+    flex: 1;
+    width: 25.5rem;
+    height: 20.5rem;
+    border-radius: 0.5rem;
+    
+    
+}
+
+
+
+
+.main .main-section .main-section-benefits .main-section-benefits-color .main-section-benefits-color-block .main-section-benefits-color-block-text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding:1.5rem 1.5rem;
+
+}
+
+.main .main-section .main-section-benefits .main-section-benefits-color .main-section-benefits-color-block .main-section-benefits-color-block-text h3 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.main .main-section .main-section-benefits .main-section-benefits-color .main-section-benefits-color-block .main-section-benefits-color-block-text p {
+    font-size: 1.2rem;
+}
+
+.footer {
+    height: 9.5rem;
+    width: 100%;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .footer-fab {
+    font-size: 0.9rem;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    padding: 0 0.6rem;
+}
+
+.footer .footer-fab a {
+    text-decoration: none;
+    color: var(--ghit);
+}
+
+.footer .footer-fab .fa-github {
+    font-size: 2rem;
+}
+
+.footer .footer-textn {
+    font-size: 0.9rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 0.6rem;
+}
+
+
+/* Ajustes para celular */
+@media only screen and (max-width: 700px) {
+    .header {
+        padding: 0.5rem 0rem;
+    }
+    .header .header-nav {
+        margin: 0 1rem;
+        flex-wrap: wrap;
+    }
+    .header .header-nav .header-nav-links ul {
+        display: none;
+    }
+
+    .header .header-nav .header-nav-links-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .header .header-nav .header-nav-links-dropdown .header-nav-links-dropdown-btn {
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        background-color: var(--color2)
+    }
+
+    .header-nav-links-dropdown-btn-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        right:0rem;
+        min-width: 5rem;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 0.5rem;
+    }
+      
+    .header-nav-links-dropdown-btn-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        border-radius: 0.5rem;
+    }
+ 
+    .header-nav-links-dropdown-btn-content a:hover {
+        background-color: var(--color2);
+        color:var(--fonte)
+    }
+
+    .header-nav-links-dropdown:hover .header-nav-links-dropdown-btn-content {
+        display: block;
+      }
+      
+    .header-nav-links-dropdown:hover .header-nav-links-dropdown-btn {
+        background-color: red;
+    }
+
+
+
+
+    .main .main-section .main-section-content {
+        flex-direction: column;
+        padding: 1rem 1rem;
+        margin: 2rem 0.75rem;
+    }
+    .main .main-section .main-section-sports {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main .main-section .main-section-text {
+        padding: 0 0;
+    }
+    
+    .main .main-section .main-section-img img {
+        width: 19.25rem;
+    }
+    .main .main-section .main-section-sports .main-section-sports-card {
+        width: 19.25rem;
+    }
+    .main .main-section .main-section-benefits {
+    
+    }
+    .main .main-section .main-section-benefits .main-section-benefits-color .main-section-benefits-color-block {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 85%;
+        gap: 0;        
+    }
+    .main .main-section .main-section-benefits .main-section-benefits-color:nth-child(odd) .main-section-benefits-color-block:nth-child(odd) {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        
+    }
+    .main .main-section .main-section-benefits .main-section-benefits-color .main-section-benefits-color-block img {
+        width: 100%;
+        height: 20rem;
+        border-radius: 0.5rem;
+        margin: 0;
+        gap: 0;
+    }
+}
